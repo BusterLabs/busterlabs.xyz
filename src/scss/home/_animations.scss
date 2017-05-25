@@ -1,0 +1,32 @@
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+$start: 900ms;
+$duration: 500ms;
+$increment: 200ms;
+
+.animation--fade_in {
+    animation-name: fadeIn;
+    transition-timing-function: ease-in;
+    animation-duration: $duration;
+    animation-fill-mode: both;
+
+    &.animation_timing--first {
+        animation-delay: $start;
+    }
+
+    &.animation_timing--second {
+        animation-delay: $start + $increment;
+    }
+
+    &.animation_timing--third {
+        animation-delay: $start + ($increment * 2);
+    }
+
+}

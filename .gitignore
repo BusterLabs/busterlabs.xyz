@@ -1,0 +1,7 @@
+# OSX Stuff
+**/.DS_Store
+*.DS_Store
+
+# FE Stuff
+node_modules
+
