@@ -141,6 +141,10 @@ $icon_size: 70px;
     border-radius: 15px;
 }
 
+.app_list--icon_circle {
+    border-radius: $icon_size;
+}
+
 .app_list--name {
     opacity: 0;
     margin-top: $section_spacing / 2;
